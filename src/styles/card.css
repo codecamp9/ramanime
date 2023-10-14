@@ -1,0 +1,9 @@
+.slick-next, .slick-prev {
+    display: block !important;
+    }
+
+    @media (max-width: 768px) {
+        .slick-next, .slick-prev {
+            display: none !important;
+            }
+    }
