@@ -51,7 +51,29 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:hidden">
+            <Slider {...settings} className="w-[350px] md:max-w-sm">
+              <div className="flex justify-center">
+                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <img
+                    className="rounded-lg"
+                    src="https://i.ytimg.com/vi/6vMuWuWlW4I/hqdefault.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <img
+                    className="rounded-lg"
+                    src="https://i.ytimg.com/vi/luYOt2-c2TI/hqdefault.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </Slider>
+          </div>
+          <div className="hidden justify-center md:flex">
             <Slider {...settings} className="w-[300px] md:max-w-sm">
               <div className="flex justify-center">
                 <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

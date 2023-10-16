@@ -134,7 +134,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#popular"
                   className="block py-2 pl-3 pr-4 text-[#B7B7B7] rounded hover:bg-gray-100 hover:text-[#070720]  md:hover:bg-transparent md:hover:text-[white] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Popular
