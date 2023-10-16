@@ -19,6 +19,28 @@ const Hero = () => {
     <>
       <section className="bg-[#0B0C2A] dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid md:grid-cols-2 gap-8 md:gap-16">
+          <div className="flex justify-center md:hidden">
+            <Slider {...settings} className="w-[300px] md:max-w-sm">
+              <div className="flex justify-center">
+                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <img
+                    className="rounded-lg"
+                    src="https://i.ytimg.com/vi/6vMuWuWlW4I/hqdefault.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <img
+                    className="rounded-lg"
+                    src="https://i.ytimg.com/vi/luYOt2-c2TI/hqdefault.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </Slider>
+          </div>
           <div className="flex flex-col justify-center">
             <h1 className="text-center md:text-left mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
               Nonton <span className="text-blue-500">Gratis</span> <br /> Tanpa
@@ -50,28 +72,6 @@ const Hero = () => {
                 </svg>
               </a>
             </div>
-          </div>
-          <div className="flex justify-center md:hidden">
-            <Slider {...settings} className="w-[300px] md:max-w-sm">
-              <div className="flex justify-center">
-                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <img
-                    className="rounded-lg"
-                    src="https://i.ytimg.com/vi/6vMuWuWlW4I/hqdefault.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <img
-                    className="rounded-lg"
-                    src="https://i.ytimg.com/vi/luYOt2-c2TI/hqdefault.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </Slider>
           </div>
           <div className="hidden justify-center md:flex">
             <Slider {...settings} className="w-[300px] md:max-w-sm">
