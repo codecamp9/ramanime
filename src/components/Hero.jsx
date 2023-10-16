@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex justify-center md:hidden">
-            <Slider {...settings} className="w-[200px] md:max-w-sm">
+            <Slider {...settings} className="w-[300px] md:max-w-sm">
               <div className="flex justify-center">
                 <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                   <img
