@@ -40,9 +40,29 @@ const Populer = () => {
 
   return (
     <>
-      <section className="h-screen" id="popular">
+      <section id="popular">
         <div className="w-full py-8 px-4 mx-auto max-w-screen-xl">
-          <h1 className="text-white font-bold text-2xl">Popular</h1>
+          <h1 className="text-white font-bold text-2xl">
+            Popular Anime{" "}
+            <a href="#">
+              <span className="ml-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 inline"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
+            </a>
+          </h1>
           <div className="">
             <Slider {...settings} className="mt-5">
               <div className="relative w-[118px] h-[210px] pr-3">

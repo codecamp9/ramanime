@@ -1,11 +1,8 @@
 import poser1 from "../assets/imgs/anime/SPY x FAMILY.jpg";
-import poser2 from "../assets/imgs/anime/Jujutsu Kaisen.jpg";
-import poser3 from "../assets/imgs/anime/ONE PIECE.jpg";
-import poser4 from "../assets/imgs/anime/Bleach.jpg";
-import Slider from "react-slick";
-import "../styles/card.css";
 
-const Trending = () => {
+import Slider from "react-slick";
+
+const Updated = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -43,10 +40,10 @@ const Trending = () => {
 
   return (
     <>
-      <section id="trending">
+      <section>
         <div className="w-full py-8 px-4 mx-auto max-w-screen-xl">
           <h1 className="text-white font-bold text-2xl">
-            Trending Now{" "}
+            Updated Anime{" "}
             <a href="#">
               <span className="ml-4">
                 <svg
@@ -97,7 +94,7 @@ const Trending = () => {
               </div>
               <div className="relative w-[118px] h-[210px] pr-3">
                 <a href="/" className="block relative group">
-                  <img src={poser2} alt="" className="rounded-xl" />
+                  <img src={poser1} alt="" className="rounded-xl" />
                   <div className="absolute h-full w-full bg-black/60 rounded-xl flex items-center justify-center opacity-0 bottom-0 group-hover:opacity-100 transition-all duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +121,7 @@ const Trending = () => {
               </div>
               <div className="relative w-[118px] h-[210px] pr-3">
                 <a href="/" className="block relative group">
-                  <img src={poser3} alt="" className="rounded-xl" />
+                  <img src={poser1} alt="" className="rounded-xl" />
                   <div className="absolute h-full w-full bg-black/60 rounded-xl flex items-center justify-center opacity-0 bottom-0 group-hover:opacity-100 transition-all duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +148,7 @@ const Trending = () => {
               </div>
               <div className="relative w-[118px] h-[210px] pr-3">
                 <a href="/" className="block relative group">
-                  <img src={poser4} alt="" className="rounded-xl" />
+                  <img src={poser1} alt="" className="rounded-xl" />
                   <div className="absolute h-full w-full bg-black/60 rounded-xl flex items-center justify-center opacity-0 bottom-0 group-hover:opacity-100 transition-all duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +202,7 @@ const Trending = () => {
               </div>
               <div className="relative w-[118px] h-[210px] pr-3">
                 <a href="/" className="block relative group">
-                  <img src={poser2} alt="" className="rounded-xl" />
+                  <img src={poser1} alt="" className="rounded-xl" />
                   <div className="absolute h-full w-full bg-black/60 rounded-xl flex items-center justify-center opacity-0 bottom-0 group-hover:opacity-100 transition-all duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +229,7 @@ const Trending = () => {
               </div>
               <div className="relative w-[118px] h-[210px] pr-3">
                 <a href="/" className="block relative group">
-                  <img src={poser3} alt="" className="rounded-xl" />
+                  <img src={poser1} alt="" className="rounded-xl" />
                   <div className="absolute h-full w-full bg-black/60 rounded-xl flex items-center justify-center opacity-0 bottom-0 group-hover:opacity-100 transition-all duration-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -265,4 +262,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default Updated;
