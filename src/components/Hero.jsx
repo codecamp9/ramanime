@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import gambar from "../assets/imgs/anime/SPY x FAMILY.jpg";
 import gambar1 from "../assets/imgs/anime/ONE PIECE.jpg";
+import CardHero from "./card/CardHero";
 
 const Hero = () => {
   const settings = {
@@ -75,16 +76,8 @@ const Hero = () => {
           </div>
           <div className="hidden justify-center md:flex">
             <Slider {...settings} className="w-[300px] md:max-w-sm">
-              <div className="flex justify-center">
-                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <img className="rounded-lg" src={gambar1} alt="" />
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <img className="rounded-lg" src={gambar} alt="" />
-                </div>
-              </div>
+              <CardHero poster={gambar} />
+              <CardHero poster={gambar1} />
             </Slider>
           </div>
         </div>

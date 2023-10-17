@@ -1,3 +1,7 @@
 body {
   background-color: #0B0C2A;
 }
+
+.slick-track {
+  display: flex;
+}
