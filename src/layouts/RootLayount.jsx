@@ -1,14 +1,15 @@
-/* eslint-disable react/no-unknown-property */
-const Header = () => {
+import { Link, Outlet } from "react-router-dom";
+
+const Footer = () => {
   return (
     <>
       <nav className="bg-[#070720] border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <span className=" text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Ram<span className="text-blue-500">anime</span>
             </span>
-          </a>
+          </Link>
           <div className="flex md:order-2">
             <button
               type="button"
@@ -116,36 +117,89 @@ const Header = () => {
             </div>
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-[#070720] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-[#070720] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="block py-2 pl-3 pr-4 text-[#E8FFFF] bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
-                  aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#trending"
-                  className="block py-2 pl-3 pr-4 text-[#B7B7B7] rounded hover:bg-gray-100 hover:text-[#070720] md:hover:bg-transparent md:hover:text-[white] md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Trending
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#popular"
+                <Link
+                  to="/about"
                   className="block py-2 pl-3 pr-4 text-[#B7B7B7] rounded hover:bg-gray-100 hover:text-[#070720]  md:hover:bg-transparent md:hover:text-[white] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Popular
-                </a>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="block py-2 pl-3 pr-4 text-[#B7B7B7] rounded hover:bg-gray-100 hover:text-[#070720]  md:hover:bg-transparent md:hover:text-[white] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <Outlet />
+      <footer className="bg-[#070720] shadow dark:bg-gray-900">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="https://flowbite.com/"
+              className="flex items-center mb-4 sm:mb-0"
+            >
+              <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                Ram<span className="text-blue-500">anime</span>
+              </span>
+            </a>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                <Link
+                  to="/"
+                  className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <a href="#" className="hover:underline text-[#B1B7B7]">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span className="block text-sm text-[#B1B7B7] sm:text-center dark:text-gray-400">
+            © 2023{" "}
+            <a href="https://flowbite.com/" className="hover:underline">
+              Ram<span className="text-blue-500">anime</span>
+            </a>
+            . All Rights Reserved.
+          </span>
+        </div>
+      </footer>
     </>
   );
 };
 
-export default Header;
+export default Footer;
