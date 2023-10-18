@@ -24,12 +24,12 @@ const Card = (props) => {
               </svg>
             </div>
             <div className="absolute bottom-0 right-0">
-              <div className="bg-gray-400 p-2  rounded-br-xl bg-opacity-[60%] flex items-center gap-1">
+              <div className="bg-gray-400 p-1 md:p-2  rounded-br-xl bg-opacity-[60%] flex items-center gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-4 h-4 text-white"
+                  className="w-3 h-3 md:w-4 md:h-4 text-white"
                 >
                   <path
                     fillRule="evenodd"
@@ -38,7 +38,9 @@ const Card = (props) => {
                   />
                 </svg>
 
-                <span className="text-[12px] font-medium text-white">7.8</span>
+                <span className="text-[10px] md:text-[12px] font-medium text-white">
+                  7.8
+                </span>
               </div>
             </div>
           </a>
