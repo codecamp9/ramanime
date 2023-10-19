@@ -4,6 +4,7 @@ import RootLayout from "../layouts/RootLayount";
 import Home from "../pages/animes/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Detail from "../pages/animes/_id";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/detail",
+        element: <Detail />,
       },
     ],
   },
