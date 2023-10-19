@@ -2,9 +2,9 @@
 const Character = (props) => {
   return (
     <>
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="flex  bg-[#3A3A3E] bg-opacity-50 rounded-l-xl">
-          <div className="flex px-2 py-5 w-[191px] md:w-[308px]">
+          <div className="flex px-2 py-5">
             <div>
               <div className="avatar">
                 <div className="w-16 rounded-full">
@@ -21,7 +21,7 @@ const Character = (props) => {
           </div>
         </div>
         <div className="flex bg-[#3A3A3E] bg-opacity-50 rounded-r-xl">
-          <div className="flex px-2 py-5 md:w-[308px] justify-end">
+          <div className="flex justify-end px-2 py-5">
             <div className="pr-3">
               <p className="text-base font-semibold text-right text-white">
                 {props.voiceName} <br />

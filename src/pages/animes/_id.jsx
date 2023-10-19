@@ -11,7 +11,7 @@ const Detail = () => {
       {/* Detail hero start */}
       <section className="bg-center bg-no-repeat bg-cover bg-[url('https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg')] bg-gray-700 bg-blend-multiply relative">
         <div className="absolute inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-lg"></div>
-        <div className="relative max-w-screen-xl px-4 mx-auto py-36">
+        <div className="relative max-w-screen-xl px-4 mx-auto py-14 lg:py-36">
           <div className="flex flex-col items-center lg:flex lg:flex-row md:items-start lg:items-stretch">
             <img
               src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-PEn1CTc93blC.jpg"
@@ -121,7 +121,7 @@ const Detail = () => {
             karakter & Pengisi Suara
           </h1>
         </div>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <Character
             animeName="Tanjiro Kamado"
             role="Main"
