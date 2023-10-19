@@ -182,6 +182,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  to="/detail"
+                  className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
+                >
+                  Detail
+                </Link>
+              </li>
+              <li>
                 <a href="#" className="hover:underline text-[#B1B7B7]">
                   Support
                 </a>
