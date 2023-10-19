@@ -1,3 +1,5 @@
+import Character from "../../components/card/Character";
+
 const Detail = () => {
   const deskripsi =
     "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.<br>\n<br>\n(Source: Crunchyroll)";
@@ -6,17 +8,18 @@ const Detail = () => {
 
   return (
     <>
+      {/* Detail hero start */}
       <section className="bg-center bg-no-repeat bg-cover bg-[url('https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg')] bg-gray-700 bg-blend-multiply relative">
-        <div className="absolute inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-sm"></div>
-        <div className="px-4 mx-auto max-w-screen-xl py-20 relative">
-          <div className="lg:flex lg:flex-row flex flex-col items-center lg:items-stretch">
+        <div className="absolute inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-lg"></div>
+        <div className="relative max-w-screen-xl px-4 mx-auto py-36">
+          <div className="flex flex-col items-center lg:flex lg:flex-row md:items-start lg:items-stretch">
             <img
               src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-PEn1CTc93blC.jpg"
               alt=""
               className="w-[199px] rounded-lg mb-5"
             />
             <div className="lg:pl-8">
-              <h1 className=" text-white text-2xl font-bold">
+              <h1 className="text-2xl font-bold text-white ">
                 Demon Slayer: Kimetsu no Yaiba
               </h1>
               <div className="badge bg-[#070720] border-none  text-white mr-2">
@@ -35,7 +38,7 @@ const Detail = () => {
                 Supernatural
               </div>
               <div className="flex mt-2">
-                <p className="text-white flex items-center mr-2">
+                <p className="flex items-center mr-2 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -50,7 +53,7 @@ const Detail = () => {
                   </svg>
                   83
                 </p>
-                <p className="text-white flex items-center mr-2">
+                <p className="flex items-center mr-2 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -65,7 +68,7 @@ const Detail = () => {
                   </svg>
                   25 menit
                 </p>
-                <p className="text-white flex items-center">
+                <p className="flex items-center text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -82,10 +85,10 @@ const Detail = () => {
                 </p>
               </div>
               <p
-                className="text-white font-normal mt-5"
+                className="mt-5 font-normal text-white"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}
               ></p>
-              <div className="my-5 flex justify-center md:justify-start flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <div className="flex flex-col justify-center my-5 space-y-4 md:justify-start sm:flex-row sm:space-y-0 sm:space-x-4">
                 <a
                   href="#"
                   className="inline-flex justify-center items-center py-2 px-2 text-base font-medium text-center text-white rounded-lg bg-[#070720] hover:bg-[#0B0C2A] focus:"
@@ -109,6 +112,37 @@ const Detail = () => {
           </div>
         </div>
       </section>
+      {/* Detail hero end */}
+
+      {/* character start */}
+      <section className="relative max-w-screen-xl px-4 py-10 mx-auto">
+        <div className="mb-5">
+          <h1 className="text-2xl font-bold text-white">
+            karakter & Pengisi Suara
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <Character
+            animeName="Tanjiro Kamado"
+            role="Main"
+            voiceName="Nezuko Kamado "
+            from="Jepang"
+          />
+          <Character
+            animeName="Tanjiro Kamado"
+            role="Main"
+            voiceName="Nezuko Kamado "
+            from="Jepang"
+          />
+          <Character
+            animeName="Tanjiro Kamado"
+            role="Main"
+            voiceName="Nezuko Kamado "
+            from="Jepang"
+          />
+        </div>
+      </section>
+      {/* character end */}
     </>
   );
 };
