@@ -1,6 +1,44 @@
 import Character from "../../components/card/Character";
+import Card from "../../components/card/Card";
+import poser1 from "../../assets/imgs/anime/SPY x FAMILY.jpg";
+import Slider from "react-slick";
 
 const Detail = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
+  };
+
   const deskripsi =
     "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.<br>\n<br>\n(Source: Crunchyroll)";
 
@@ -11,8 +49,8 @@ const Detail = () => {
       {/* Detail hero start */}
       <section className="bg-center bg-no-repeat bg-cover bg-[url('https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg')] bg-gray-700 bg-blend-multiply relative">
         <div className="absolute inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-lg"></div>
-        <div className="relative max-w-screen-xl px-4 mx-auto py-14 lg:py-36">
-          <div className="flex flex-col items-center lg:flex lg:flex-row md:items-start lg:items-stretch">
+        <div className="relative block md:flex max-w-screen-xl mx-auto">
+          <div className="px-4 flex flex-col items-center lg:flex lg:flex-row md:items-start py-14 lg:py-36">
             <img
               src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-PEn1CTc93blC.jpg"
               alt=""
@@ -110,6 +148,39 @@ const Detail = () => {
               </div>
             </div>
           </div>
+          <div className="bg-gray-950 w-full py-8 lg:py-0 lg:w-[320px] bg-opacity-20">
+            <div className="pl-6 text-white lg:py-36">
+              <p className="pb-2 font-bold">
+                Nama lain : <span className="font-light pl-2">SPY×FAMILY</span>
+              </p>
+              <p className="pb-2 font-bold">
+                Durasi : <span className="font-light pl-2">25m</span>
+              </p>
+              <p className="pb-2 font-bold">
+                Rlis : <span className="font-light pl-2">2022</span>
+              </p>
+              <p className="pb-2 font-bold">
+                Status : <span className="font-light pl-2">Completed</span>
+              </p>
+              <p className="pb-2 font-bold">
+                Type :{" "}
+                <span className="font-light pl-2">SPRING 2022 ANIME</span>
+              </p>
+              <p className="pb-2 font-bold">
+                Sub Or Dub : <span className="font-light pl-2">sub</span>
+              </p>
+              <hr className="lg:w-60 w-full opacity-20" />
+              <p className="pb-2 font-bold pt-2">
+                Studio : <span className="font-light pl-2">Ufotable</span>
+              </p>
+              <p className="pb-2 font-bold">
+                Produser :{" "}
+                <span className="font-light pl-2">
+                  Akifumi Fujio Masanori Miyake Yūma Takahashi
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       {/* Detail hero end */}
@@ -140,6 +211,79 @@ const Detail = () => {
             voiceName="Nezuko Kamado "
             from="Jepang"
           />
+        </div>
+        <div className="w-full py-10 mx-auto max-w-screen-xl">
+          <h1 className="text-white font-bold text-2xl">
+            Rekomendasi Anime{" "}
+            <a href="#">
+              <span className="ml-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6 inline"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
+            </a>
+          </h1>
+          <Slider {...settings} className="mt-5">
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+            <Card
+              poster={poser1}
+              title="Spy X Family"
+              date="2022"
+              link="https://github.com/Ramadani-coding"
+            />
+          </Slider>
         </div>
       </section>
       {/* character end */}
