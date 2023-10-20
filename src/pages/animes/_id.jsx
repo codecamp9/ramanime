@@ -71,7 +71,7 @@ const Detail = () => {
           <div className="">
             <iframe
               ref={iframeRef}
-              className="w-full h-screen rounded-2xl"
+              className="w-full h-[308px] lg:h-screen rounded-2xl"
               src="https://goone.pro/embedplus?id=MTE2ODI1&token=td47TWeD9RX7TU0jyGYj0A&expires=1697824119"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

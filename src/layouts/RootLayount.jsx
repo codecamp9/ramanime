@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <>
       <nav className="bg-[#070720] border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
           <Link to="/" className="flex items-center">
-            <span className=" text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold text-white  whitespace-nowrap dark:text-white">
               Ram<span className="text-blue-500">anime</span>
             </span>
           </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
             <button
               data-collapse-toggle="navbar-search"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-search"
               aria-expanded="false"
             >
@@ -146,10 +146,10 @@ const Footer = () => {
       </nav>
       <Outlet />
       <footer className="bg-[#070720] shadow dark:bg-gray-900">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="w-full max-w-screen-xl p-4 mx-auto md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Link to="/" className="flex items-center mb-4 sm:mb-0">
-              <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold text-white whitespace-nowrap dark:text-white">
                 Ram<span className="text-blue-500">anime</span>
               </span>
             </Link>
@@ -184,14 +184,6 @@ const Footer = () => {
                   className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
                 >
                   Detail
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/watch"
-                  className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
-                >
-                  Watch Anime
                 </Link>
               </li>
               <li>
