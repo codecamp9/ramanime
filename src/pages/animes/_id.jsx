@@ -188,7 +188,7 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-950 w-full py-8 lg:py-0 lg:w-[320px] bg-opacity-20 rounded-xl h-max ">
+          <div className="bg-gray-950 w-full py-8 lg:py-0 lg:w-[320px] bg-opacity-20 md:rounded-xl h-max ">
             <div className="pl-6 text-white lg:py-10">
               <p className="pb-2 font-bold">
                 Nama lain : <span className="pl-2 font-light">SPY×FAMILY</span>
