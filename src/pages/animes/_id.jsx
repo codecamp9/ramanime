@@ -3,6 +3,8 @@ import Card from "../../components/card/Card";
 import poser1 from "../../assets/imgs/anime/SPY x FAMILY.jpg";
 import Slider from "react-slick";
 
+import { useRef } from "react";
+
 const Detail = () => {
   const settings = {
     dots: false,
@@ -39,6 +41,22 @@ const Detail = () => {
     ],
   };
 
+  const iframeRef = useRef(null);
+
+  const toggleFullScreen = () => {
+    const iframe = iframeRef.current;
+
+    if (iframe && iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe && iframe.mozRequestFullScreen) {
+      iframe.mozRequestFullScreen();
+    } else if (iframe && iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe && iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  };
+
   const deskripsi =
     "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.<br>\n<br>\n(Source: Crunchyroll)";
 
@@ -46,33 +64,52 @@ const Detail = () => {
 
   return (
     <>
-      {/* Detail hero start */}
+      {/* Video start */}
       <section className="bg-center bg-no-repeat bg-cover bg-[url('https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-YfZhKBUDDS6L.jpg')] bg-gray-700 bg-blend-multiply relative">
         <div className="absolute inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-lg"></div>
-        <div className="relative block md:flex max-w-screen-xl mx-auto">
-          <div className="px-4 flex flex-col items-center lg:flex lg:flex-row md:items-start py-14 lg:py-36">
+        <div className="relative w-full max-w-screen-xl px-4 py-8 mx-auto">
+          <div className="">
+            <iframe
+              ref={iframeRef}
+              className="w-full h-screen rounded-2xl"
+              src="https://goone.pro/embedplus?id=MTE2ODI1&token=td47TWeD9RX7TU0jyGYj0A&expires=1697824119"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+          <div className="flex justify-end mt-2">
+            <button onClick={toggleFullScreen} className="btn btn-xs">
+              Full Screen
+            </button>
+          </div>
+        </div>
+        {/* Video end */}
+
+        {/* Detail hero start */}
+        <div className="relative block max-w-screen-xl mx-auto lg:flex">
+          <div className="flex items-start px-4 md:flex lg:flex lg:flex-row md:items-start py-14 lg:py-10">
             <img
               src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-PEn1CTc93blC.jpg"
               alt=""
-              className="w-[199px] rounded-lg mb-5"
+              className="w-[100px] rounded-lg mb-5"
             />
-            <div className="lg:pl-8">
-              <h1 className="text-2xl font-bold text-white ">
+            <div className="pl-4 md:pl-8">
+              <h1 className="text-xl font-bold text-white ">
                 Demon Slayer: Kimetsu no Yaiba
               </h1>
-              <div className="badge bg-[#070720] border-none  text-white mr-2">
+              <div className="badge bg-[#070720] border-none  text-white mr-2 text-xs">
                 Action
               </div>
-              <div className="badge bg-[#070720] border-none text-white mr-2">
+              <div className="badge bg-[#070720] border-none text-white mr-2 text-xs">
                 Adventure
               </div>
-              <div className="badge bg-[#070720] border-none text-white mr-2">
+              <div className="badge bg-[#070720] border-none text-white mr-2 text-xs">
                 Drama
               </div>
-              <div className="badge bg-[#070720] border-none text-white mr-2">
+              <div className="badge bg-[#070720] border-none text-white mr-2 text-xs">
                 Fantasy
               </div>
-              <div className="badge bg-[#070720] border-none text-white mr-2">
+              <div className="badge bg-[#070720] border-none text-white mr-2 text-xs">
                 Supernatural
               </div>
               <div className="flex mt-2">
@@ -148,34 +185,34 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-950 w-full py-8 lg:py-0 lg:w-[320px] bg-opacity-20">
-            <div className="pl-6 text-white lg:py-36">
+          <div className="bg-gray-950 w-full py-8 lg:py-0 lg:w-[320px] bg-opacity-20 rounded-xl h-max ">
+            <div className="pl-6 text-white lg:py-10">
               <p className="pb-2 font-bold">
-                Nama lain : <span className="font-light pl-2">SPY×FAMILY</span>
+                Nama lain : <span className="pl-2 font-light">SPY×FAMILY</span>
               </p>
               <p className="pb-2 font-bold">
-                Durasi : <span className="font-light pl-2">25m</span>
+                Durasi : <span className="pl-2 font-light">25m</span>
               </p>
               <p className="pb-2 font-bold">
-                Rlis : <span className="font-light pl-2">2022</span>
+                Rlis : <span className="pl-2 font-light">2022</span>
               </p>
               <p className="pb-2 font-bold">
-                Status : <span className="font-light pl-2">Completed</span>
+                Status : <span className="pl-2 font-light">Completed</span>
               </p>
               <p className="pb-2 font-bold">
                 Type :{" "}
-                <span className="font-light pl-2">SPRING 2022 ANIME</span>
+                <span className="pl-2 font-light">SPRING 2022 ANIME</span>
               </p>
               <p className="pb-2 font-bold">
-                Sub Or Dub : <span className="font-light pl-2">sub</span>
+                Sub Or Dub : <span className="pl-2 font-light">sub</span>
               </p>
-              <hr className="lg:w-60 w-full opacity-20" />
-              <p className="pb-2 font-bold pt-2">
-                Studio : <span className="font-light pl-2">Ufotable</span>
+              <hr className="w-full lg:w-60 opacity-20" />
+              <p className="pt-2 pb-2 font-bold">
+                Studio : <span className="pl-2 font-light">Ufotable</span>
               </p>
               <p className="pb-2 font-bold">
                 Produser :{" "}
-                <span className="font-light pl-2">
+                <span className="pl-2 font-light">
                   Akifumi Fujio Masanori Miyake Yūma Takahashi
                 </span>
               </p>
@@ -212,8 +249,8 @@ const Detail = () => {
             from="Jepang"
           />
         </div>
-        <div className="w-full py-10 mx-auto max-w-screen-xl">
-          <h1 className="text-white font-bold text-2xl">
+        <div className="w-full max-w-screen-xl py-10 mx-auto">
+          <h1 className="text-2xl font-bold text-white">
             Rekomendasi Anime{" "}
             <a href="#">
               <span className="ml-4">
@@ -223,7 +260,7 @@ const Detail = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-6 h-6 inline"
+                  className="inline w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"

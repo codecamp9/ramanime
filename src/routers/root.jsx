@@ -5,6 +5,7 @@ import Home from "../pages/animes/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Detail from "../pages/animes/_id";
+import Watch from "../pages/animes/Watch";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "/detail",
         element: <Detail />,
+      },
+      {
+        path: "/watch",
+        element: <Watch />,
       },
     ],
   },

@@ -187,6 +187,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  to="/watch"
+                  className="mr-4 hover:underline md:mr-6  text-[#B1B7B7]"
+                >
+                  Watch Anime
+                </Link>
+              </li>
+              <li>
                 <a href="#" className="hover:underline text-[#B1B7B7]">
                   Support
                 </a>
