@@ -90,13 +90,13 @@ const Detail = () => {
 
         {/* Detail hero start */}
         <div className="relative block max-w-screen-xl mx-auto lg:flex">
-          <div className="flex items-start px-4 md:flex lg:flex lg:flex-row md:items-start py-14 lg:py-10">
+          <div className="items-start px-4 md:flex lg:flex lg:flex-row md:items-start py-14 lg:py-10">
             <img
               src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-PEn1CTc93blC.jpg"
               alt=""
-              className="w-[100px] rounded-lg mb-5"
+              className="w-[150px] md:w-[100px] rounded-lg mb-5"
             />
-            <div className="pl-4 md:pl-8">
+            <div className="lg:pl-8">
               <h1 className="text-xl font-bold text-white ">
                 Demon Slayer: Kimetsu no Yaiba
               </h1>
