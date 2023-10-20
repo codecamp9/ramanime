@@ -75,6 +75,9 @@ const Detail = () => {
               src="https://goone.pro/embedplus?id=MTE2ODI1&token=td47TWeD9RX7TU0jyGYj0A&expires=1697824119"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen // Izinkan mode layar penuh
+              frameBorder="0" // Hilangkan batas bingkai iframe
+              scrolling="no" // Nonaktifkan scroll dalam iframe
             ></iframe>
           </div>
           <div className="flex justify-end mt-2">
