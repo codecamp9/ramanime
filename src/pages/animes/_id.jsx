@@ -80,7 +80,7 @@ const Detail = () => {
               scrolling="no" // Nonaktifkan scroll dalam iframe
             ></iframe>
           </div>
-          <div className="flex justify-end mt-2">
+          <div className="justify-end hidden mt-2 lg:block">
             <button onClick={toggleFullScreen} className="btn btn-xs">
               Full Screen
             </button>
